@@ -1,5 +1,5 @@
 import React from "react";
-import author from "../me.png";
+import author from "../me.jpg";
 
 const AboutMe = () => {
     return (
@@ -13,7 +13,7 @@ const AboutMe = () => {
                 <div className="col-lg-6 col-xm-12">
                     <h1 className="about-heading">About Me</h1>
                     <p>
-                        Myself Syed Vaiz. I'm a guy how is Energetic, Meticulous and Quick learner. I'm a foodie but loves being healthy and fit.
+                        Myself Syed Vaiz. I'm a guy who is Energetic, Meticulous and Quick learner. I'm a foodie but loves being healthy and fit.
                     </p>
                 </div> 
             </div>                   

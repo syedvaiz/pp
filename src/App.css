@@ -41,8 +41,12 @@
 
 :root{
   --primary-white: #ffffff;
+  --primary-black: #000000;
+  --primary-light-grey: #dbdbdb;
+  --primary-dark-grey:#868686;
+  --primary-color:#1b1a20;
   --primary-blue: #0aa1a175;
-  --primary-dark: rgba(255,255,255,0);
+  --primary-dark: rgb(52, 56, 64);
   --primary-dblue: #192dd8;
   --primary-hover-blue :#0aa1a175;
 }
@@ -174,6 +178,7 @@ nav ul li{
 }
 
 /*-------------Aboutme-------------*/
+
 .photo-wrap{
   display: flex;
   justify-content: center;
@@ -181,14 +186,15 @@ nav ul li{
 }
 
 .profile-img{
-  width: 16rem;
+  width: 10rem;
+  height: 11rem;
   border-radius: 50%;
   padding: 0.3rem;
-  border: 1px solid var(--primary-dark);
+  border: 1px solid #d3d2d2;
 }
 
 .about-heading{
-  color: var(--primary-hover-dark);
+  color: var(--primary-black);
   text-transform: uppercase;
 }
 
@@ -196,4 +202,125 @@ nav ul li{
   .profile-img{
     width: 10rem;
   }
+}
+
+/*-------------Skillset-------------*/
+.skillset {
+  text-align: center;
+  padding: 2rem;
+  background: var(--primary-color);
+}
+
+li{
+  text-align: justify;
+}
+
+.skillset h1{
+  color: var(--primary-white);
+  text-transform: uppercase;
+}
+.skillset .circle {
+  position: relative;
+  margin: 0.375rem auto;
+  background: var(--primary-light-grey);
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.skillset .icon {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skillset .box1 {
+  height: 17rem;
+  border-radius: 1.7rem;
+  border-bottom: 0.3125rem solid var(--primary-light-grey);
+  padding: 0.625rem;
+  margin-bottom: 1.875rem;
+  background: var(--primary-dark-grey);
+}
+
+.skillset .box2 {
+  height: 17rem;
+  border-radius: 1.7rem;
+  border-bottom: 0.3125rem solid var(--primary-light-grey);
+  padding: 0.625rem;
+  margin-bottom: 1.875rem;
+  background: var(--primary-dark-grey);
+}
+.skillset .box3 {
+  height: 11rem;
+  border-radius: 1.7rem;
+  border-bottom: 0.3125rem solid var(--primary-light-grey);
+  padding: 0.625rem;
+  margin-bottom: 1.875rem;
+  background: var(--primary-dark-grey);
+}
+.skillset .box4 {
+  height: 9.5rem;
+  border-radius: 1.7rem;
+  border-bottom: 0.3125rem solid var(--primary-light-grey);
+  padding: 0.625rem;
+  margin-bottom: 1.875rem;
+  background: var(--primary-dark-grey);
+}
+
+.skillset .box1:hover {
+  background: var(--primary-color);
+  border-bottom: 0.3125 solid var(--primary-white);
+}
+.skillset .box1:hover .icon {
+  color: var(--primary-black);
+}
+.skillset .box1:hover .circle {
+  background: var(--primary-white);
+}
+.skillset .box1:hover li, h3 {
+  color: var(--primary-white);
+}
+
+.skillset .box2:hover {
+  background: var(--primary-color);
+  border-bottom: 0.3125 solid var(--primary-white);
+}
+.skillset .box2:hover .icon {
+  color: var(--primary-black);
+}
+.skillset .box2:hover .circle {
+  background: var(--primary-white);
+}
+.skillset .box2:hover li, h3 {
+  color: var(--primary-white);
+}
+.skillset .box3:hover {
+  background: var(--primary-color);
+  border-bottom: 0.3125 solid var(--primary-white);
+}
+.skillset .box3:hover .icon {
+  color: var(--primary-black);
+}
+.skillset .box3:hover .circle {
+  background: var(--primary-white);
+}
+.skillset .box3:hover li, h3 {
+  color: var(--primary-white);
+}
+.skillset .box4:hover {
+  background: var(--primary-color);
+  border-bottom: 0.3125 solid var(--primary-white);
+}
+.skillset .box4:hover .icon {
+  color: var(--primary-black);
+}
+.skillset .box4:hover .circle {
+  background: var(--primary-white);
+}
+.skillset .box4:hover li, h3 {
+  color: var(--primary-white);
 }
